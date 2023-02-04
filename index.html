@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <style>
+      .accordion-item{
+        background-color: black;
+        color: aliceblue;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+      .accordion-button{
+        background-color: black;
+        color: aliceblue;
+        border-radius: 20px;
+      }
+      .wrapper{
+        width: 70%;
+        margin: 60px auto;
+        border-radius: 10px;
+      }
+      .accordion{
+        --bs-border-radius:10px;
+        --bs-accordion-btn-icon:url("https://static.vecteezy.com/system/resources/previews/000/441/140/original/plus-vector-icon.jpg");
+      }
+      .accordion-button::after{
+        background-color: black;
+        background-position: center;
+        --bs-accordion-btn-active-icon:url("https://7ik.ru/800/600/https/pbs.twimg.com/ext_tw_video_thumb/1186282134522212367/pu/img/6ljF47tH8rdOnJlj.jpg");
+      }
+      .accordion-button:not(.collapsed){
+        background-color: black;
+        color: aliceblue;
+      }
+      .accordion-item:not(:first-of-type){
+        border-top: 1px solid black;
+      }
+      body{
+        background-color: bisque;
+      }
+    </style>
+
+    <title>Accordion</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <div class="box-container">
+    <div class="wrapper">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is Web Development?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              A website has the power to make or break a business. A site that is appealing and easy to use will reel in new customers and boost profits. If it takes forever to load or looks dated, that company will lose sales to their competition - and their brand image could suffer lasting damage.
+              Needless to say, the art of web development has become incredibly important. According to the Bureau of Labor Statistics, developer jobs are projected to increase by 13% over the next 8 years, exceeding the average growth rate of most other jobs.
+              If you are hoping to enter a stable industry with skills that literally every organization needs, then you’re starting in the right place. This is our complete guide to computer programming: we’ll explore what it means to become a developer, and delve into the most common terms and definitions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What is HTML?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+              Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What is Python exactly?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Python is a general-purpose programming language. 
+              If you see any survey on popular programming languages over the last few years, Python 
+              always comes on top of the demand chart each year.People who hate programming are tempted to change
+              their minds by the simplicity of Python. Most of the job listings have Python somewhere as part of 
+              the job description. Let us see what makes Python so special in this decade and future. Candidates 
+              and companies upskill or reskill in Python irrespective of their qualifications, roles, and experience. Needless to say, 
+              Python is very easy to learn.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                What is HTTP?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of 
+                any data exchange on the Web and it is a client-server protocol, which means requests are 
+                initiated by the recipient, usually the Web browser. A complete document is reconstructed 
+                from the different sub-documents fetched, for instance, text, layout description, images, videos, 
+                scripts, and more.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                What does JavaScript do?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                JavaScript is a scripting or programming language that allows you
+                to implement complex features on web pages — every time a web page 
+                does more than just sit there and display static information for you to 
+                look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, 
+                scrolling video jukeboxes.</div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
